@@ -3,10 +3,12 @@ package com.example.circuitbreakersusingresilience4J.controller;
 import com.example.circuitbreakersusingresilience4J.model.Activity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-@RestController("/activity")
+@RestController
+@RequestMapping("/activity")
 public class ActivityController {
 
     private RestTemplate restTemplate;
